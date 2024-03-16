@@ -1,7 +1,40 @@
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const cera = localFont({
+  src: [
+    {
+      path: "./cera/CeraRoundPro-Thin.otf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "./cera/CeraRoundPro-Light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./cera/CeraRoundPro-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./cera/CeraRoundPro-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./cera/CeraRoundPro-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./cera/CeraRoundPro-Black.otf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +44,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cera.className}>{children}</body>
     </html>
   );
 }
