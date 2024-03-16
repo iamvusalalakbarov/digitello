@@ -14,6 +14,9 @@ module.exports = {
         "brand-black": "#151C25",
         "brand-grey": "#2C3F3F",
       },
+      spacing: {
+        13: "3.25rem",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
