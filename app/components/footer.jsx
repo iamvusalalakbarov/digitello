@@ -3,7 +3,7 @@ import WhiteLogo from "./white-logo";
 
 export default function Footer() {
   return (
-    <footer className="h-[196px] flex">
+    <footer className="h-[196px] flex mt-auto">
       <div className="bg-brand-black pl-8 md:pl-12 lg:pl-24 pr-20 pt-9">
         <WhiteLogo />
         <p className="text-[#fff] pt-8">

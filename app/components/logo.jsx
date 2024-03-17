@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <Link href={"."}>
       <Image
-        src={"./logos/digitello-logo.svg"}
+        src={"/logos/digitello-logo.svg"}
         width={122}
         height={25}
         alt="Digitello Logo"
