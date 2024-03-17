@@ -17,7 +17,7 @@ export default function Home() {
       <About className="mb-24" />
       <Service className="mb-24" />
       <Portfolio className="mb-24" />
-      <Career className="mb-24" />
+      <Career vector={false} className="mb-24" />
       <Blog className="mb-24" />
       <Footer />
     </>
