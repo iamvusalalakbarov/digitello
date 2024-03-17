@@ -4,7 +4,7 @@ export default function BlogCard({ imageURL }) {
   return (
     <div className="w-[280px] h-[400px] relative group">
       <img src={imageURL} className="absolute inset-0 -z-10" />
-      <div className="w-full h-full flex flex-col justify-between py-6 px-3 bg-brand-blue opacity-0 group-hover:opacity-75 transition-all duration-500">
+      <div className="w-full h-full flex flex-col justify-between py-6 px-3 bg-brand-blue/75 opacity-0 group-hover:opacity-100 transition-all duration-500">
         <h6 className="font-bold text-3xl text-[#fff] leading-none">
           Curabitur felis ligula, gravida ut venenatis nec, accumsan et sem.
         </h6>

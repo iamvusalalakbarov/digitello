@@ -2,6 +2,7 @@ import Career from "@/components/career";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Heading from "@/components/heading";
+import Team from "@/components/team";
 
 export default function AboutPage() {
   return (
@@ -49,10 +50,10 @@ export default function AboutPage() {
 
           <p className="max-w-[515px] text-lg leading-6 text-brand-black">
             With an array of cutting-edge tools and a team of seasoned experts,
-            we don&apos;t just deliver projects; we craft transformative experiences
-            that leave lasting impressions. Our dedication to excellence drives
-            us to explore new avenues and stay ahead of the curve, ensuring you
-            stay one step ahead of the competition.
+            we don&apos;t just deliver projects; we craft transformative
+            experiences that leave lasting impressions. Our dedication to
+            excellence drives us to explore new avenues and stay ahead of the
+            curve, ensuring you stay one step ahead of the competition.
           </p>
         </div>
 
@@ -157,15 +158,25 @@ export default function AboutPage() {
 
       <div className="flex justify-between items-center h-[140px] px-8 md:px-12 lg:px-24 mb-24 bg-brand-yellow">
         <form className="flex items-center gap-[30px]">
-          <input type="number" placeholder="Your phone number" className="w-[270px] h-9 rounded-[10px] text-xl text-center text-brand-black bg-white placeholder:text-[#cecece] focus-within:outline-none remove-arrow" />
-          <input type="email" placeholder="Your e-mail" className="w-[270px] h-9 rounded-[10px] text-xl text-center text-brand-black bg-white placeholder:text-[#cecece] focus-within:outline-none" />
+          <input
+            type="number"
+            placeholder="Your phone number"
+            className="w-[270px] h-9 rounded-[10px] text-xl text-center text-brand-black bg-white placeholder:text-[#cecece] focus-within:outline-none remove-arrow"
+          />
+          <input
+            type="email"
+            placeholder="Your e-mail"
+            className="w-[270px] h-9 rounded-[10px] text-xl text-center text-brand-black bg-white placeholder:text-[#cecece] focus-within:outline-none"
+          />
 
           <div className="flex items-center gap-x-2">
             <span className="block size-5 bg-white"></span>
             <span className="text-white underline cursor-pointer">Captcha</span>
           </div>
 
-          <button className="py-2 px-8 rounded-[10px] text-xl text-white bg-brand-blue hover:bg-brand-green transition-colors cursor-pointer">Submit</button>
+          <button className="py-2 px-8 rounded-[10px] text-xl text-white bg-brand-blue hover:bg-brand-green transition-colors cursor-pointer">
+            Submit
+          </button>
         </form>
 
         <p className="font-bold text-[30px] text-black">Say hello to us!</p>
@@ -173,13 +184,8 @@ export default function AboutPage() {
 
       <Career className="mb-24" vector={true} />
 
-      <div>
-        <Heading className="mb-[60px]">Team</Heading>
+      <Team />
 
-        <div className="flex justify">
-
-        </div>
-      </div>
       <Footer />
     </>
   );

@@ -103,31 +103,3 @@ export default function Service({ className }) {
     </div>
   );
 }
-
-/* 
-
-        <li>
-          <Link
-            href={"./about/web-development"}
-            className="flex flex-col justify-between items-center gap-y-8 w-[253px] py-6 rounded-[10px] border border-[#cecece]"
-          >
-            <div className="grid place-items-center w-[60px] h-[60px] rounded-[5px] bg-brand-blue">
-              <Image
-                src={"/web-dev-icon.svg"}
-                width={36}
-                height={36}
-                alt="Web Development Icon"
-              />
-            </div>
-
-            <h3 className="font-medium text-xl text-brand-black">
-              Web Development
-            </h3>
-
-            <p className="max-w-[217px] text-sm text-center text-[#474747]">
-              Lorem ipsum dolor sit amet. Etiam dolor lacus, ultrices sed est
-              vitae, semper sollicitudin turpis.
-            </p>
-          </Link>
-        </li>
-*/
