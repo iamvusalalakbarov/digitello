@@ -49,7 +49,7 @@ export default function AboutPage() {
 
           <p className="max-w-[515px] text-lg leading-6 text-brand-black">
             With an array of cutting-edge tools and a team of seasoned experts,
-            we don't just deliver projects; we craft transformative experiences
+            we don&apos;t just deliver projects; we craft transformative experiences
             that leave lasting impressions. Our dedication to excellence drives
             us to explore new avenues and stay ahead of the curve, ensuring you
             stay one step ahead of the competition.
