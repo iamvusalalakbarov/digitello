@@ -1,8 +1,8 @@
 import NavLink from "./nav-link";
 
-export default function HeaderNav({ className }) {
+export default function HeaderNav() {
   return (
-    <nav className={`hidden lg:block ${className}`}>
+    <nav className="hidden lg:block absolute top-0 left-1/2 -translate-x-1/2">
       <ul className="flex justify-center items-center gap-x-6">
         <li>
           <NavLink href={"/about"}>About</NavLink>
