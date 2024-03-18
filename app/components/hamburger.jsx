@@ -35,7 +35,7 @@ export default function Hamburger() {
       </div>
       <div
         className={clsx("w-6 h-[5px] rounded bg-brand-yellow transition-all duration-500", {
-          "opacity-0 duration-100": isHamburgerOpen,
+          "opacity-0 duration-75": isHamburgerOpen,
         })}
       ></div>
       <div
