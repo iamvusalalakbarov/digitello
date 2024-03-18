@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <header className={clsx("flex justify-between items-center px-8 md:px-12 lg:px-24 mt-13 bg-white sticky lg:relative", {
-      "absolute": isMobileMenuOpen,
+      "absolute z-10": isMobileMenuOpen,
     })}>
       <Logo />
       <HeaderNav
