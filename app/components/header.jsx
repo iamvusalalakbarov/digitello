@@ -10,13 +10,18 @@ export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    const html = document.querySelector("html");
+
     if (isMobileMenuOpen) {
+      html.style.overflow = "hidden";
       document.body.style.overflow = "hidden";
     } else {
+      html.style.overflow = "unset";
       document.body.style.overflow = "unset";
     }
 
     return () => {
+      html.style.overflow = "unset";
       document.body.style.overflow = "unset";
     }
 
@@ -34,7 +39,7 @@ export default function Header() {
       <HeaderNav
         className={clsx({
           "invisible opacity-0 lg:opacity-100 lg:visible": !isMobileMenuOpen,
-          "visible opacity-100 h-screen": isMobileMenuOpen,
+          "visible opacity-100 w-screen h-screen": isMobileMenuOpen,
         })}
       />
       <Hamburger
