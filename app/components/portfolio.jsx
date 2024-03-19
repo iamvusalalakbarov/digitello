@@ -4,7 +4,7 @@ export default function Portfolio({ className }) {
   return (
     <div className={`px-8 md:px-12 lg:px-24 ${className}`}>
       <Heading className="mb-10">Portfolio</Heading>
-      <ul className="flex flex-wrap justify-between items-center gap-y-8">
+      <ul className="flex flex-col lg:flex-row lg:flex-wrap justify-between items-center gap-y-8">
         <li>
           <img src="/photos/portfolio-photo-1.png" />
         </li>

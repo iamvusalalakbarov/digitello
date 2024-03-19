@@ -4,7 +4,7 @@ export default function Partners({ className }) {
   return (
     <div className={className}>
       <Heading className="mb-14">Partners</Heading>
-      <ul className="flex justify-center items-center gap-x-16 opacity-70">
+      <ul className="flex flex-col lg:flex-row justify-center items-center gap-x-16 gap-y-8 opacity-70">
         <li>
           <img src="/partner-logos/spotify-logo.png" alt="Spotify Logo" />
         </li>

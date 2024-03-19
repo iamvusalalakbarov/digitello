@@ -73,7 +73,7 @@ export default function Service({ className }) {
   return (
     <div className={`${className}`}>
       <Heading className="mb-10">Service</Heading>
-      <ul className="flex justify-center items-center flex-wrap gap-10">
+      <ul className="flex flex-col lg:flex-row justify-center items-center lg:flex-wrap gap-10">
         {services.map((service) => (
           <li key={service.id}>
             <Link

@@ -11,10 +11,10 @@ export default function Career({ className, vector }) {
         {vector && <img src="/photos/vector-career.svg" />}
         <p
           className={clsx(
-            "max-w-[793px] font-medium text-2xl leading-none text-brand-blue",
+            "max-w-[793px] font-medium text-2xl text-center leading-none text-brand-blue",
             {
-              "text-center": vector === false,
-              "text-start": vector === true,
+              "lg-text-center": vector === false,
+              "lg-text-start": vector === true,
             }
           )}
         >

@@ -5,18 +5,18 @@ import SocialLink from "./social-link";
 
 export default function Footer() {
   return (
-    <footer className="h-[196px] flex mt-auto">
-      <div className="bg-brand-black pl-8 md:pl-12 lg:pl-24 pr-20 pt-9">
+    <footer className="h-[196px] flex flex-col lg:flex-row mt-auto">
+      <div className="flex justify-between lg:block bg-brand-black px-8 md:pl-12 lg:pl-24 lg:pr-20 py-8 lg:pt-9">
         <WhiteLogo />
-        <p className="text-[#fff] pt-8">
+        <p className="text-[#fff] lg:pt-8">
           Hyatt Tower II, 6th floor <br />
           AZ1025 - Baku, Azerbaijan <br />
           +994 55 221 62 81
         </p>
       </div>
-      <div className="flex-1 bg-brand-yellow pr-8 md:pr-12 lg:pr-24 pt-8 pl-20">
-        <div className="flex justify-between items-end">
-          <ul className="grid grid-cols-2 gap-x-16">
+      <div className="flex flex-col justify-center items-center lg:block flex-1 bg-brand-yellow lg:pr-24 md:pr-12 pt-8 lg:pl-20">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-y-8">
+          <ul className="grid place-items-center lg:place-items-start lg:grid-cols-2 gap-x-16 gap-y-2 lg:gap-y-0">
             <li>
               <FooterLink href="/about">About</FooterLink>
             </li>
@@ -161,7 +161,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <p className="font-medium text-sm text-brand-blue mt-10">
+        <p className="font-medium text-sm text-brand-blue mt-10 mb-4 lg:mb-0">
           Developed by{" "}
           <Link href={"."} className="underline">
             Digitello
