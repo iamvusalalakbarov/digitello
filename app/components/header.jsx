@@ -13,18 +13,17 @@ export default function Header() {
     const html = document.querySelector("html");
 
     if (isMobileMenuOpen) {
-      html.style.overflow = "hidden";
-      document.body.style.overflow = "hidden";
+      html.classList.add("overflow-hidden", "lg:overflow-auto");
+      document.body.classList.add("overflow-hidden", "lg:overflow-auto");
     } else {
-      html.style.overflow = "unset";
-      document.body.style.overflow = "unset";
+      html.classList.remove("overflow-hidden", "lg:overflow-auto");
+      document.body.classList.remove("overflow-hidden", "lg:overflow-auto");
     }
 
     return () => {
-      html.style.overflow = "unset";
-      document.body.style.overflow = "unset";
-    }
-
+      html.classList.remove("overflow-hidden", "lg:overflow-auto");
+      document.body.classList.remove("overflow-hidden", "lg:overflow-auto");
+    };
   }, [isMobileMenuOpen]);
 
   function handleHamburgerClick() {
@@ -32,14 +31,20 @@ export default function Header() {
   }
 
   return (
-    <header className={clsx("flex justify-between items-center px-8 md:px-12 lg:px-24 mt-13 bg-white sticky lg:relative", {
-      "absolute z-10": isMobileMenuOpen,
-    })}>
+    <header
+      className={clsx(
+        "flex justify-between items-center px-8 md:px-12 lg:px-24 mt-13 bg-white sticky lg:relative",
+        {
+          "absolute lg:static z-10 lg:z-0": isMobileMenuOpen,
+        }
+      )}
+    >
       <Logo />
       <HeaderNav
         className={clsx({
           "invisible opacity-0 lg:opacity-100 lg:visible": !isMobileMenuOpen,
-          "visible opacity-100 w-screen h-screen": isMobileMenuOpen,
+          "visible opacity-100 w-screen h-screen lg:w-auto lg:h-auto":
+            isMobileMenuOpen,
         })}
       />
       <Hamburger

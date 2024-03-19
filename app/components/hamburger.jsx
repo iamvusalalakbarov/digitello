@@ -3,7 +3,7 @@ import clsx from "clsx";
 export default function Hamburger({ onClick, isMobileMenuOpen }) {
   return (
     <label
-      className="lg:hidden flex flex-col gap-y-[2.8px] cursor-pointer relative"
+      className="flex flex-col gap-y-[2.8px] cursor-pointer relative"
       onClick={onClick}
     >
       <div
