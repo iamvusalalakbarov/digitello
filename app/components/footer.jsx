@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div className="flex flex-col justify-center items-center lg:block flex-1 bg-brand-yellow lg:pr-24 md:pr-12 pt-8 lg:pl-20">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-y-8">
-          <ul className="grid place-items-center lg:place-items-start lg:grid-cols-2 gap-x-16 gap-y-2 lg:gap-y-0">
+          <ul className="grid place-items-center lg:place-items-start grid-cols-2 gap-x-16 gap-y-2 lg:gap-y-0">
             <li>
               <FooterLink href="/about">About</FooterLink>
             </li>
