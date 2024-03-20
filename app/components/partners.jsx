@@ -30,6 +30,7 @@ const partners = [
 
 export default function Partners({ className }) {
   let settings = {
+    arrows: false,
     dots: false,
     infinite: false,
     speed: 2000,
