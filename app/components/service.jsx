@@ -71,9 +71,9 @@ const services = [
 
 export default function Service({ className }) {
   return (
-    <div className={`${className}`}>
+    <div className={`px-2 ${className}`}>
       <Heading className="mb-10">Service</Heading>
-      <ul className="flex flex-col lg:flex-row justify-center items-center lg:flex-wrap gap-10">
+      <ul className="flex flex-col md:flex-row justify-center items-center md:flex-wrap gap-10">
         {services.map((service) => (
           <li key={service.id}>
             <Link
