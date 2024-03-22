@@ -6,8 +6,8 @@ export default function Portfolio({ className }) {
     <div className={`px-8 md:px-12 lg:px-24 ${className}`}>
       <Heading className="mb-10">Portfolio</Heading>
       <div className="flex justify-center items-center">
-        <div className="flex flex-wrap justify-between items-stretch gap-y-[2vw] lg:gap-y-8 w-[80vw] max-w-[1136px] aspect-[142/79]">
-          <div className="relative w-[22%] aspect-[127/150]">
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-between items-stretch gap-y-[2vw] lg:gap-y-8 w-[80vw] max-w-[1136px] aspect-[142/79]">
+          <div className="relative w-full md:w-[22%] aspect-[127/150]">
             <Image
               src={"/photos/portfolio-photo-1.png"}
               alt="Portfolio Photo 1"
@@ -16,7 +16,7 @@ export default function Portfolio({ className }) {
               unoptimized
             />
           </div>
-          <div className="relative w-[48%] aspect-[136/75]">
+          <div className="relative w-full md:w-[48%] aspect-[136/75]">
             <Image
               src={"/photos/portfolio-photo-2.png"}
               alt="Portfolio Photo 2"
@@ -25,7 +25,7 @@ export default function Portfolio({ className }) {
               unoptimized
             />
           </div>
-          <div className="relative w-[22%] aspect-[127/150]">
+          <div className="relative w-full md:w-[22%] aspect-[127/150]">
             <Image
               src={"/photos/portfolio-photo-3.png"}
               alt="Portfolio Photo 3"
@@ -34,7 +34,7 @@ export default function Portfolio({ className }) {
               unoptimized
             />
           </div>
-          <div className="relative w-[48%] aspect-[136/75]">
+          <div className="relative w-full md:w-[48%] aspect-[136/75]">
             <Image
               src={"/photos/portfolio-photo-4.png"}
               alt="Portfolio Photo 4"
@@ -43,7 +43,7 @@ export default function Portfolio({ className }) {
               unoptimized
             />
           </div>
-          <div className="relative w-[48%] aspect-[136/75]">
+          <div className="relative w-full md:w-[48%] aspect-[136/75]">
             <Image
               src={"/photos/portfolio-photo-5.png"}
               alt="Portfolio Photo 5"
