@@ -19,6 +19,7 @@ export default function WebDevelopmentPage() {
             width={470}
             height={300}
             alt="Vector image about web development"
+            className="hidden lg:block"
           />
 
           <div className="max-w-[365px] flex flex-col justify-between gap-y-[17px] leading-none">
