@@ -31,7 +31,7 @@ export default function Blog({ className }) {
             imageURL={imageURL}
             onTouchStart={() => handleTouchStart(index)}
             innerStyle={clsx({
-              "opacity-100 md:opacity-0": hoveredCard === index
+              "opacity-100 lg:opacity-0": hoveredCard === index
             })}
           />
         ))}
