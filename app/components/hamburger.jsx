@@ -3,14 +3,14 @@ import clsx from "clsx";
 export default function Hamburger({ onClick, isMobileMenuOpen }) {
   return (
     <label
-      className="flex flex-col gap-y-[2.8px] cursor-pointer relative"
+      className="flex flex-col justify-center items-center size-7 gap-y-[2.8px] cursor-pointer relative"
       onClick={onClick}
     >
       <div
         className={clsx(
           "flex justify-between items-center w-6 h-[5px] transition-transform duration-500",
           {
-            "absolute inset-0 rotate-45": isMobileMenuOpen,
+            "absolute rotate-45": isMobileMenuOpen,
           }
         )}
       >
@@ -36,7 +36,7 @@ export default function Hamburger({ onClick, isMobileMenuOpen }) {
         className={clsx(
           "w-6 h-[5px] rounded bg-brand-blue transition-transform duration-500",
           {
-            "absolute inset-0 -rotate-45": isMobileMenuOpen,
+            "absolute -rotate-45": isMobileMenuOpen,
           }
         )}
       ></div>
