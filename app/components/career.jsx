@@ -8,7 +8,7 @@ export default function Career({ className, vector }) {
     >
       <Heading className="mb-10">Career</Heading>
       <div className="flex justify-center items-center gap-x-9">
-        {vector && <img src="/photos/vector-career.svg" />}
+        {vector && <img src="/photos/vector-career.svg" className="hidden mb:block" />}
         <p
           className={clsx(
             "max-w-[793px] font-medium text-2xl text-center leading-none text-brand-blue",

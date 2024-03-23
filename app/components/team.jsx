@@ -1,5 +1,9 @@
+"use client";
+
 import Heading from "./heading";
 import TeamCard from "./team-card";
+import { useState } from "react";
+import clsx from "clsx";
 
 const team = [
   {
@@ -46,10 +50,16 @@ const team = [
 ];
 
 export default function Team({ className }) {
+  const [hoveredCard, setHoveredCard] = useState(0);
+
+  function handleTouchStart(index) {
+    setHoveredCard(index);
+  };
+
   return (
     <div className={`${className}`}>
       <Heading className="mb-[60px]">Team</Heading>
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-y-4 mb-4 lg:mb-0">
         {team.map((member, index) => (
           <TeamCard
             key={index}
@@ -57,6 +67,10 @@ export default function Team({ className }) {
             position={member.position}
             description={member.description}
             background={member.background}
+            onTouchStart={() => handleTouchStart(index)}
+            innerStyle={clsx({
+              "opacity-100 lg:opacity-0": hoveredCard === index
+            })}
           />
         ))}
       </div>

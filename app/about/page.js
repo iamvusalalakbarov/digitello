@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Career from "@/components/career";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -12,9 +13,16 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <div className="flex gap-x-32 px-8 md:px-12 lg:px-24 my-24">
-        <div className="w-[480px] h-[360px] relative group">
-          <img src="/photos/about-photo-1.jpg" className="opacity-25" />
+
+      <div className="flex lg:gap-x-32 px-8 md:px-12 lg:px-24 my-24">
+        <div className="hidden lg:block w-[480px] h-[360px] relative group">
+          <Image
+            src="/photos/about-photo-1.jpg"
+            alt="About Photo 1"
+            fill
+            className="object-cover opacity-25"
+            unoptimized
+          />
           <div className="w-20 h-20 flex justify-center items-center rounded-full bg-[#e50000] opacity-0 group-hover:opacity-70 transition-opacity duration-500 cursor-pointer absolute inset-1/2 -translate-x-1/2 -translate-y-1/2">
             <img src="/photos/triangle.svg" className="ml-2" />
           </div>
@@ -30,7 +38,7 @@ export default function AboutPage() {
             At your service since 2015
           </p>
 
-          <p className="w-[515px] text-lg text-brand-black">
+          <p className="max-w-[515px] text-lg text-brand-black">
             We believe our unique approach sets us apart from the rest. Our
             focus on individuality and customization sets us apart in the world
             of off-the-shelf solutions. We pride ourselves on being different
@@ -39,7 +47,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="flex gap-x-32 px-8 md:px-12 lg:px-24 mb-24 relative">
+      <div className="flex flex-col lg:flex-row gap-x-32 px-8 md:px-12 lg:px-24 mb-24 relative">
         <div className="flex flex-col gap-y-6">
           <h3 className="max-w-[300px] font-black text-[40px] leading-none text-brand-blue">
             We are unique, you are unique!
@@ -61,7 +69,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-x-8">
+        <div className="hidden lg:grid grid-cols-2 gap-x-8">
           <div className="absolute -top-24 -z-10">
             <img src="/photos/circles-vector.png" />
           </div>
@@ -89,7 +97,7 @@ export default function AboutPage() {
 
       <div className="px-8 md:px-12 lg:px-24 mb-24">
         <Heading className="mb-[60px]">Our clients saying</Heading>
-        <div className="flex justify-between gap-x-[30px]">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-[30px]">
           <div className="flex flex-col items-center w-[270px] p-6 rounded-2xl border border-[#cbcbcb]">
             <div className="size-[140px] rounded-2xl mb-6">
               <img src="/photos/client-1.jpg" className="rounded-2xl" />
@@ -160,8 +168,8 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="flex justify-between items-center h-[140px] px-8 md:px-12 lg:px-24 mb-24 bg-brand-yellow">
-        <form className="flex items-center gap-[30px]">
+      <div className="flex flex-col lg:flex-row gap-y-4 justify-between items-center min-h-[140px] p-8 md:py-0 md:px-12 lg:px-24 mb-24 bg-brand-yellow">
+        <form className="flex flex-col lg:flex-row items-center gap-[30px]">
           <input
             type="number"
             placeholder="Your phone number"
