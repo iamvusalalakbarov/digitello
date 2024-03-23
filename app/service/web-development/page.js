@@ -32,7 +32,7 @@ export default function WebDevelopmentPage() {
               At your service since 2015
             </p>
 
-            <p className="w-[515px] text-lg text-brand-black">
+            <p className="max-w-[515px] text-lg text-brand-black">
               We believe our unique approach sets us apart from the rest. Our
               focus on individuality and customization sets us apart in the
               world of off-the-shelf solutions. We pride ourselves on being
