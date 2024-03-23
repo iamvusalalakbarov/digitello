@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Logo() {
   return (
-    <Link href={"."}>
+    <Link href={"/"}>
       <Image
         src={"/logos/digitello-logo.svg"}
         width={122}
