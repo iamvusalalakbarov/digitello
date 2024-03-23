@@ -4,6 +4,10 @@ import Header from "@/components/header";
 import Heading from "@/components/heading";
 import Team from "@/components/team";
 
+export const metadata = {
+  title: "About",
+};
+
 export default function AboutPage() {
   return (
     <>

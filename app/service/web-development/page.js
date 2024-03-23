@@ -3,6 +3,10 @@ import Header from "@/components/header";
 import Heading from "@/components/heading";
 import Footer from "@/components/footer";
 
+export const metadata = {
+  title: "Web Development",
+};
+
 export default function WebDevelopmentPage() {
   return (
     <>
