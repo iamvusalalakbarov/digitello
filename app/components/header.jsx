@@ -42,8 +42,8 @@ export default function Header() {
       <Logo />
       <HeaderNav
         className={clsx({
-          "invisible opacity-0 lg:opacity-100 lg:visible": !isMobileMenuOpen,
-          "visible opacity-100 w-screen h-screen lg:w-auto lg:h-auto":
+          "-top-[800px]": !isMobileMenuOpen,
+          "top-full w-screen h-screen lg:w-auto lg:h-auto":
             isMobileMenuOpen,
         })}
       />

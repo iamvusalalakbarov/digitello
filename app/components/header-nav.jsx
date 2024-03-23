@@ -2,8 +2,8 @@ import NavLink from "./nav-link";
 
 export default function HeaderNav({ className }) {
   return (
-    <nav className={`lg:block w-full lg:w-auto absolute top-full lg:top-0 left-1/2 -translate-x-1/2 mt-4 lg:mt-0 bg-white transition-all duration-500 lg:duration-0 ${className}`}>
-      <ul className="flex flex-col lg:flex-row justify-center items-center gap-x-6 divide-y divide-brand-grey lg:divide-y-0 [&>li]:w-full lg:[&>li]:w-auto [&>li]:text-center">
+    <nav className={`w-full lg:w-auto absolute lg:top-0 left-1/2 -translate-x-1/2 -z-20 lg:-z-0 mt-4 lg:mt-0 bg-white transition-all duration-700 lg:duration-0 ${className}`}>
+      <ul className="flex flex-col lg:flex-row justify-center items-center gap-x-6 [&>li]:w-full lg:[&>li]:w-auto [&>li]:text-center">
         <li>
           <NavLink href={"/about"}>About</NavLink>
         </li>
