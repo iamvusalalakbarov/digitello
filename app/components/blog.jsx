@@ -15,7 +15,7 @@ const imageURLs = [
 export default function Blog({ className }) {
   const [hoveredCard, setHoveredCard] = useState(0);
 
-  function handleMouseEnter(index) {
+  function handleTouchStart(index) {
     setHoveredCard(index);
   };
 
@@ -29,7 +29,7 @@ export default function Blog({ className }) {
           <BlogCard
             key={index}
             imageURL={imageURL}
-            onMouseEnter={() => handleMouseEnter(index)}
+            onTouchStart={() => handleTouchStart(index)}
             innerStyle={clsx({
               "opacity-100 md:opacity-0": hoveredCard === index
             })}
